@@ -1,3 +1,3 @@
 # Hello there mungy
 
-mungy face poo sticky
+mungy face poo stick
