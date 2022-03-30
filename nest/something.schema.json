@@ -1,0 +1,1138 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "anyOf": [
+      {
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "dateRange": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "end": {
+                        "type": "string"
+                      },
+                      "start": {
+                        "$ref": "#/items/anyOf/0/anyOf/0/properties/dateRange/anyOf/0/properties/end"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/items/anyOf/0/anyOf/0/properties/dateRange/anyOf/0"
+                    }
+                  }
+                ]
+              },
+              "targeting": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "articleStyle": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "columnist",
+                            "commercial",
+                            "extraWide",
+                            "legacy",
+                            "narrow",
+                            "wide"
+                          ]
+                        }
+                      },
+                      "channel": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "virals",
+                            "ushome",
+                            "travel",
+                            "debate",
+                            "sport",
+                            "sciencetech",
+                            "home",
+                            "tvshowbiz",
+                            "usshowbiz",
+                            "royalwedding",
+                            "none",
+                            "wires",
+                            "worldnews",
+                            "video",
+                            "health",
+                            "money",
+                            "indiahome",
+                            "auhome",
+                            "coffeebreak",
+                            "news",
+                            "femail",
+                            "dailymailtv",
+                            "columnists"
+                          ]
+                        }
+                      },
+                      "classicHomepage": {
+                        "type": "array",
+                        "minItems": 1,
+                        "maxItems": 1,
+                        "items": [
+                          {
+                            "type": "boolean",
+                            "const": true
+                          }
+                        ]
+                      },
+                      "country": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "ad",
+                            "ae",
+                            "af",
+                            "ag",
+                            "ai",
+                            "al",
+                            "am",
+                            "ao",
+                            "aq",
+                            "ar",
+                            "as",
+                            "at",
+                            "au",
+                            "aw",
+                            "ax",
+                            "az",
+                            "ba",
+                            "bb",
+                            "bd",
+                            "be",
+                            "bf",
+                            "bg",
+                            "bh",
+                            "bi",
+                            "bj",
+                            "bl",
+                            "bm",
+                            "bn",
+                            "bo",
+                            "bq",
+                            "br",
+                            "bs",
+                            "bt",
+                            "bv",
+                            "bw",
+                            "by",
+                            "bz",
+                            "ca",
+                            "cc",
+                            "cd",
+                            "cf",
+                            "cg",
+                            "ch",
+                            "ci",
+                            "ck",
+                            "cl",
+                            "cm",
+                            "cn",
+                            "co",
+                            "cr",
+                            "cu",
+                            "cv",
+                            "cw",
+                            "cx",
+                            "cy",
+                            "cz",
+                            "de",
+                            "dj",
+                            "dk",
+                            "dm",
+                            "do",
+                            "dz",
+                            "ec",
+                            "ee",
+                            "eg",
+                            "eh",
+                            "er",
+                            "es",
+                            "et",
+                            "fi",
+                            "fj",
+                            "fk",
+                            "fm",
+                            "fo",
+                            "fr",
+                            "ga",
+                            "gb",
+                            "gd",
+                            "ge",
+                            "gf",
+                            "gg",
+                            "gh",
+                            "gi",
+                            "gl",
+                            "gm",
+                            "gn",
+                            "gp",
+                            "gq",
+                            "gr",
+                            "gs",
+                            "gt",
+                            "gu",
+                            "gw",
+                            "gy",
+                            "hk",
+                            "hm",
+                            "hn",
+                            "hr",
+                            "ht",
+                            "hu",
+                            "id",
+                            "ie",
+                            "il",
+                            "im",
+                            "in",
+                            "io",
+                            "iq",
+                            "ir",
+                            "is",
+                            "it",
+                            "je",
+                            "jm",
+                            "jo",
+                            "jp",
+                            "ke",
+                            "kg",
+                            "kh",
+                            "ki",
+                            "km",
+                            "kn",
+                            "kp",
+                            "kr",
+                            "kw",
+                            "ky",
+                            "kz",
+                            "la",
+                            "lb",
+                            "lc",
+                            "li",
+                            "lk",
+                            "lr",
+                            "ls",
+                            "lt",
+                            "lu",
+                            "lv",
+                            "ly",
+                            "ma",
+                            "mc",
+                            "md",
+                            "me",
+                            "mf",
+                            "mg",
+                            "mh",
+                            "mk",
+                            "ml",
+                            "mm",
+                            "mn",
+                            "mo",
+                            "mp",
+                            "mq",
+                            "mr",
+                            "ms",
+                            "mt",
+                            "mu",
+                            "mv",
+                            "mw",
+                            "mx",
+                            "my",
+                            "mz",
+                            "na",
+                            "nc",
+                            "ne",
+                            "nf",
+                            "ng",
+                            "ni",
+                            "nl",
+                            "no",
+                            "np",
+                            "nr",
+                            "nu",
+                            "nz",
+                            "om",
+                            "pa",
+                            "pe",
+                            "pf",
+                            "pg",
+                            "ph",
+                            "pk",
+                            "pl",
+                            "pm",
+                            "pn",
+                            "pr",
+                            "ps",
+                            "pt",
+                            "pw",
+                            "py",
+                            "qa",
+                            "re",
+                            "ro",
+                            "rs",
+                            "ru",
+                            "rw",
+                            "sa",
+                            "sb",
+                            "sc",
+                            "sd",
+                            "se",
+                            "sg",
+                            "sh",
+                            "si",
+                            "sj",
+                            "sk",
+                            "sl",
+                            "sm",
+                            "sn",
+                            "so",
+                            "sr",
+                            "ss",
+                            "st",
+                            "sv",
+                            "sx",
+                            "sy",
+                            "sz",
+                            "tc",
+                            "td",
+                            "tf",
+                            "tg",
+                            "th",
+                            "tj",
+                            "tk",
+                            "tl",
+                            "tm",
+                            "tn",
+                            "to",
+                            "tr",
+                            "tt",
+                            "tv",
+                            "tw",
+                            "tz",
+                            "ua",
+                            "ug",
+                            "um",
+                            "us",
+                            "uy",
+                            "uz",
+                            "va",
+                            "vc",
+                            "ve",
+                            "vg",
+                            "vi",
+                            "vn",
+                            "vu",
+                            "wf",
+                            "ws",
+                            "ye",
+                            "yt",
+                            "za",
+                            "zm",
+                            "zw"
+                          ]
+                        }
+                      },
+                      "device": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "other",
+                            "androidMobile",
+                            "androidTablet",
+                            "ipad",
+                            "iphone",
+                            "windowsMobile"
+                          ]
+                        }
+                      },
+                      "host": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "pattern": "^[-a-zA-Z0-9:._]{2,256}$"
+                        }
+                      },
+                      "never": {
+                        "type": "boolean",
+                        "const": true
+                      },
+                      "pageType": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "channel",
+                            "article",
+                            "sponsored"
+                          ]
+                        }
+                      },
+                      "platform": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "desktop",
+                            "mobile",
+                            "tablet",
+                            "app",
+                            "bot",
+                            "other"
+                          ]
+                        }
+                      },
+                      "slotsEnabled": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "adx_page_skins",
+                            "adx_tracking",
+                            "banner_top",
+                            "billboard",
+                            "bvp_puff_26",
+                            "bvp_puff_29",
+                            "fff_overlay",
+                            "fff",
+                            "gallery_billboard",
+                            "half_mpu_top",
+                            "inread_player_mw",
+                            "inread_player_top",
+                            "inread_player",
+                            "intro_ad",
+                            "jwplayer",
+                            "leader_bottom",
+                            "leader_lower_middle",
+                            "leader_middle",
+                            "leader_top",
+                            "leader_very_bottom",
+                            "leader_wide",
+                            "mobile_gallery",
+                            "mpu_bottom_right",
+                            "mpu_bottom",
+                            "mpu_channel",
+                            "mpu_comments_1",
+                            "mpu_comments_2",
+                            "mpu_factbox",
+                            "mpu_factbox_others",
+                            "mpu_home",
+                            "mpu_left",
+                            "mpu_middle",
+                            "mpu_mobile_bottom",
+                            "mpu_mobile_factbox",
+                            "mpu_mobile_factbox_others",
+                            "mpu_mobile_lower_middle",
+                            "mpu_mobile_others",
+                            "mpu_mobile_top",
+                            "mpu_mobile_upper_middle",
+                            "mpu_mobile",
+                            "mpu_player",
+                            "mpu_puff_10",
+                            "mpu_puff_15",
+                            "mpu_puff_20",
+                            "mpu_puff_30",
+                            "mpu_puff_45",
+                            "mpu_puff_5",
+                            "mpu_puff_others",
+                            "mpu_top",
+                            "native_fff_accessorise",
+                            "native_fff_overlay_accessorise",
+                            "para_top",
+                            "puff_ad_3",
+                            "puff_ad_6",
+                            "puff_ad_9",
+                            "puff_ad_others",
+                            "sky_left_bottom",
+                            "sky_left_gallery",
+                            "sky_left_top",
+                            "sky_right_bottom",
+                            "sky_right_gallery",
+                            "sky_right_top",
+                            "sticky_banner_gallery_bottom",
+                            "sticky_banner_gallery_top",
+                            "sticky_banner",
+                            "video_ad",
+                            "video_carousel"
+                          ],
+                          "description": "Position"
+                        }
+                      },
+                      "subchannel": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "viralsghost",
+                            "strayermanagement",
+                            "albertacanada",
+                            "canadawest",
+                            "destinations",
+                            "destinationshub",
+                            "enjoyengland",
+                            "holidaytypes",
+                            "holidaytypeshub",
+                            "offertypes",
+                            "travelpictures",
+                            "sandals",
+                            "travelsupplement",
+                            "traveladfeatures",
+                            "travel_news",
+                            "travelreviews",
+                            "travelreviewshub",
+                            "westernaustralia",
+                            "blogs",
+                            "columnists",
+                            "polls",
+                            "boxing",
+                            "cricket",
+                            "Euro2012",
+                            "formulaone",
+                            "football",
+                            "golf",
+                            "sportheadlines",
+                            "matchzone",
+                            "nfl",
+                            "olympicpictures",
+                            "olympicstats",
+                            "olympics",
+                            "othersports",
+                            "sportspictures",
+                            "racing",
+                            "roadtorio",
+                            "rugbyleague",
+                            "rugbyunion",
+                            "sportadfeatures",
+                            "sportlive",
+                            "sportteampages",
+                            "tennis",
+                            "winterolympics",
+                            "worldcup2010",
+                            "worldcup2014",
+                            "worldcupteams",
+                            "esports",
+                            "sciencetechpictures",
+                            "scienceadfeatures",
+                            "adfeatures",
+                            "books",
+                            "canneslions",
+                            "christmas",
+                            "event",
+                            "gardening",
+                            "latest",
+                            "moslive",
+                            "mailonsunday",
+                            "motoring",
+                            "nationalgarden",
+                            "promotions",
+                            "property",
+                            "scotland",
+                            "sitemaparchive",
+                            "video",
+                            "weather",
+                            "weatherlocation",
+                            "you",
+                            "goodnews",
+                            "azstar",
+                            "behindthescreens",
+                            "tvshowbizbigbrother",
+                            "tvshowbizblogs",
+                            "tvshowbizcelebbigbrother",
+                            "game_of_thrones_foxtel",
+                            "tvshowbizGhost",
+                            "tvshowbizheadlines",
+                            "tvshowbizlive",
+                            "celebrity",
+                            "loveisland",
+                            "tvshowbizpictures",
+                            "redcarpet",
+                            "redcarpetau",
+                            "reviews",
+                            "tvlistings",
+                            "tvsadfeatures",
+                            "videofemail",
+                            "videomailonsunday",
+                            "newsVideonews",
+                            "videoreader",
+                            "videosport",
+                            "videotvshobiz",
+                            "videotravel",
+                            "diets",
+                            "healthadfeature",
+                            "healthdirec",
+                            "moneyambeta",
+                            "moneybills",
+                            "moneybillshub",
+                            "buytolet",
+                            "moneycardsloans",
+                            "moneycardsloanshub",
+                            "moneycars",
+                            "moneycarshub",
+                            "moneycelebritymoney",
+                            "moneycelebritymoneyhub",
+                            "comment",
+                            "currentaccounts",
+                            "diyinvesting",
+                            "moneyexperts",
+                            "moneyexpertshub",
+                            "guides",
+                            "moneyadfeatures",
+                            "moneyholidays",
+                            "moneyholidayshub",
+                            "moneyhomehub",
+                            "howmoneyworks",
+                            "indexinvesting",
+                            "moneyinvesting",
+                            "moneyinvestinghub",
+                            "investingshow",
+                            "jargon",
+                            "marketdata",
+                            "moneymarkets",
+                            "moneymarketshub",
+                            "moneymeandmymoney",
+                            "moneymidasextra",
+                            "moneymidasextrahub",
+                            "moneymortgageshome",
+                            "moneymortgageshomehub",
+                            "moneynews",
+                            "moneynewshub",
+                            "moneynewsletter",
+                            "pensionfree",
+                            "moneypensions",
+                            "moneypensionshub",
+                            "podcast",
+                            "moneysavemoneymakemoney",
+                            "moneysaving",
+                            "moneysavinghub",
+                            "shareinvesting",
+                            "smallbusiness",
+                            "studentfinance",
+                            "taxbeating",
+                            "indianews",
+                            "surveys",
+                            "cartoons",
+                            "horoscopes",
+                            "puzzles",
+                            "arts",
+                            "election",
+                            "live",
+                            "newsheadlines",
+                            "newsMostread",
+                            "newsadfeatures",
+                            "newspictures",
+                            "uknews",
+                            "worldnews",
+                            "beauty",
+                            "femailfashionhub",
+                            "fashion",
+                            "fashionstore",
+                            "femailadfeatures",
+                            "food",
+                            "jubilee",
+                            "femailnews",
+                            "femailpictures",
+                            "femailpolls",
+                            "timtamheaven",
+                            "youstore",
+                            "theinstantedit",
+                            "justthepics",
+                            "dmtvonair"
+                          ]
+                        }
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/items/anyOf/0/anyOf/0/properties/targeting/anyOf/0"
+                    }
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "payload": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "scope": {
+                        "type": "string",
+                        "const": "page"
+                      },
+                      "size": {
+                        "type": "number",
+                        "maximum": 1
+                      },
+                      "scenarios": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "type": "object",
+                          "properties": {
+                            "config": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "additionalProperties": {}
+                              }
+                            },
+                            "plugins": {
+                              "anyOf": [
+                                {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string",
+                                    "enum": [
+                                      "abe.analytics",
+                                      "abe.conversion",
+                                      "abe.errorDetection",
+                                      "abe.rtaTracking",
+                                      "adIntegrator",
+                                      "adNami",
+                                      "adProtection",
+                                      "adserver",
+                                      "addHBDeal",
+                                      "adsRefresherV2",
+                                      "adxChannelPlugin",
+                                      "adzouk",
+                                      "amazonNative",
+                                      "analytics.abtest",
+                                      "analytics.bidmax",
+                                      "analytics.bidmaxSendBeacon",
+                                      "analytics.bidmaxSendBeaconMigration",
+                                      "analytics.bidsHunting",
+                                      "analytics.cacheIndication",
+                                      "analytics.cmp",
+                                      "analytics.connection",
+                                      "analytics.customTracking",
+                                      "analytics.cwv",
+                                      "analytics.cwv.cls",
+                                      "analytics.entryPoint",
+                                      "analytics.externalData",
+                                      "analytics.inputDelays",
+                                      "analytics.memory",
+                                      "analytics.pageCriteria",
+                                      "analytics.pageUnload",
+                                      "analytics.partners",
+                                      "analytics.rtaIds",
+                                      "analytics.scrollDepth",
+                                      "analytics.storage",
+                                      "analytics.takeover",
+                                      "analytics.timeSpent",
+                                      "analytics.timing",
+                                      "analytics.videoFailures",
+                                      "analytics.viewability",
+                                      "arrowKeysScroll",
+                                      "article",
+                                      "asyncBus",
+                                      "auctionInfo",
+                                      "audienceProject",
+                                      "bidCount",
+                                      "bidders.33across",
+                                      "bidders.adform.display",
+                                      "bidders.adform.video",
+                                      "bidders.adyoulike",
+                                      "bidders.amazon",
+                                      "bidders.appnexus",
+                                      "bidders.appnexusOutstream",
+                                      "bidders.appnexusSkin",
+                                      "bidders.appnexusVideo",
+                                      "bidders.brightroll",
+                                      "bidders.collective564",
+                                      "bidders.collectiveImprove",
+                                      "bidders.criteo.video",
+                                      "bidders.criteoV2",
+                                      "bidders.groupm",
+                                      "bidders.groupmSkin",
+                                      "bidders.improveDisplay",
+                                      "bidders.improveSkins",
+                                      "bidders.improveVideo",
+                                      "bidders.ix",
+                                      "bidders.inskin",
+                                      "bidders.ixVideo",
+                                      "bidders.justPremium",
+                                      "bidders.kargo",
+                                      "bidders.mediagrid",
+                                      "bidders.mediagridVideo",
+                                      "bidders.oathVideo",
+                                      "bidders.openx",
+                                      "bidders.openxVideo",
+                                      "bidders.ozone",
+                                      "bidders.pubmatic",
+                                      "bidders.pubmaticVideo",
+                                      "bidders.pxyz",
+                                      "bidders.rhythmOne",
+                                      "bidders.rhythmOne.video",
+                                      "bidders.rubicon",
+                                      "bidders.rubiconSkin",
+                                      "bidders.rubiconVideo",
+                                      "bidders.rubiMM2",
+                                      "bidders.rubiMM",
+                                      "bidders.rubiTTD",
+                                      "bidders.sharethrough",
+                                      "bidders.smartAdServer",
+                                      "bidders.smartAdServer.video",
+                                      "bidders.spotx2",
+                                      "bidders.teads",
+                                      "bidders.telariaVideo",
+                                      "bidders.triplelift",
+                                      "bidders.tripleliftVideo",
+                                      "bidders.verizon2",
+                                      "bidders.video.konduit",
+                                      "bidders.video.rubiMM",
+                                      "bidders.video.spotx",
+                                      "bidders.yahoossp.display",
+                                      "bidders.yahoossp.video",
+                                      "bidsReceived",
+                                      "billboardAdjustments",
+                                      "blockthrough",
+                                      "botsPlugin",
+                                      "brandedVideoPlayer",
+                                      "browserResolutionPlugin",
+                                      "chromelessWaitForBillboard",
+                                      "chromelessv2.dmplayer",
+                                      "cmp.hackyDelayer",
+                                      "cmp.reprompt",
+                                      "cmp",
+                                      "cmpAvailabilityNotification",
+                                      "cmpRtaTracking",
+                                      "controlPanel",
+                                      "devicePlugin",
+                                      "dmp.moat",
+                                      "dmp.permutive.indexedDBUsage",
+                                      "dmp.permutive.video",
+                                      "domain",
+                                      "fbRemarketingPixel",
+                                      "fff",
+                                      "firstImpression",
+                                      "gpid",
+                                      "gpt",
+                                      "headerBidding.bidsReceived",
+                                      "imaSDK",
+                                      "impIDPlugin",
+                                      "increaseOnline",
+                                      "integral",
+                                      "irisTv",
+                                      "lotame",
+                                      "maxbid",
+                                      "minBid",
+                                      "mobileFlyawayPlayer",
+                                      "mvt",
+                                      "nativo",
+                                      "nonPersonalizedAds",
+                                      "pageArea",
+                                      "paidSessions",
+                                      "performPlayer",
+                                      "performanceMonitor",
+                                      "permutive",
+                                      "permutive.rtd",
+                                      "pixelSync",
+                                      "players.commercial",
+                                      "players.dmplayer",
+                                      "players.flyoutManager",
+                                      "players.targeting",
+                                      "players.visibility",
+                                      "prebidEventReporter",
+                                      "prebid.sharedId",
+                                      "prebidUserSync",
+                                      "programmaticCampaign",
+                                      "pulsepoint",
+                                      "quantcast",
+                                      "trackers.quantcast.userSync",
+                                      "realTimePricingPlugin",
+                                      "revenueReporter",
+                                      "rtaPageEventDispatcher",
+                                      "scanner",
+                                      "sessionDepth",
+                                      "skimlinks",
+                                      "skins",
+                                      "slots.InreadPlayerTop",
+                                      "slots.connatix",
+                                      "slots.leaderTop",
+                                      "slots.minuteMedia",
+                                      "slots.mpuFactBox",
+                                      "slots.mpuMobileFactbox",
+                                      "slots.mpuMobileOthers",
+                                      "slots.mpuPuffOthers",
+                                      "slots.puffAdOthers",
+                                      "slots.refreshInfo",
+                                      "slots.rendered",
+                                      "smartBanner",
+                                      "sticky.billboard",
+                                      "sticky.mpus",
+                                      "sticky.psuedoClasses",
+                                      "sticky.skies",
+                                      "switch",
+                                      "taboola",
+                                      "taboola.Outstream",
+                                      "taboolaAds",
+                                      "tcfv2",
+                                      "trackers.admantx",
+                                      "trackers.adxChannel",
+                                      "trackers.id5",
+                                      "trackers.ixIdentity",
+                                      "trackers.pubProvidedId",
+                                      "trackers.smartclip",
+                                      "trackers.taboola",
+                                      "trackers.unifiedid",
+                                      "trackers.universalid",
+                                      "trackers.viewability",
+                                      "videoEvents",
+                                      "videoFlyout",
+                                      "videoForceFlyout",
+                                      "visits",
+                                      "vpaid",
+                                      "watershed",
+                                      "yieldbot"
+                                    ]
+                                  }
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "remove": {
+                                      "$ref": "#/items/anyOf/0/anyOf/0/properties/payload/anyOf/0/properties/scenarios/additionalProperties/properties/plugins/anyOf/0"
+                                    },
+                                    "add": {
+                                      "$ref": "#/items/anyOf/0/anyOf/0/properties/payload/anyOf/0/properties/scenarios/additionalProperties/properties/plugins/anyOf/0"
+                                    }
+                                  },
+                                  "additionalProperties": false
+                                }
+                              ]
+                            },
+                            "size": {
+                              "$ref": "#/items/anyOf/0/anyOf/0/properties/payload/anyOf/0/properties/size"
+                            }
+                          },
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "scope",
+                      "scenarios"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {},
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "payload"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "dateRange": {
+                "$ref": "#/items/anyOf/0/anyOf/0/properties/dateRange"
+              },
+              "targeting": {
+                "$ref": "#/items/anyOf/0/anyOf/0/properties/targeting"
+              },
+              "clientTargeting": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "browser": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "chrome",
+                            "edge",
+                            "firefox",
+                            "ie",
+                            "safari"
+                          ]
+                        }
+                      },
+                      "globalContext": {
+                        "anyOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "prop": {
+                                "type": "string"
+                              },
+                              "op": {
+                                "type": "string",
+                                "const": "includes"
+                              },
+                              "value": {}
+                            },
+                            "required": [
+                              "prop",
+                              "op"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/items/anyOf/0/anyOf/1/properties/clientTargeting/anyOf/0/properties/globalContext/anyOf/0"
+                            }
+                          }
+                        ]
+                      },
+                      "iOSVersion": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "min": {
+                              "type": "number"
+                            },
+                            "max": {
+                              "type": "number"
+                            }
+                          },
+                          "additionalProperties": false
+                        }
+                      },
+                      "timeRange": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "end": {
+                              "type": "string",
+                              "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+                            },
+                            "start": {
+                              "$ref": "#/items/anyOf/0/anyOf/1/properties/clientTargeting/anyOf/0/properties/timeRange/items/properties/end"
+                            }
+                          },
+                          "additionalProperties": false
+                        }
+                      },
+                      "payload": {
+                        "$ref": "#/items/anyOf/0/anyOf/0/properties/payload"
+                      }
+                    },
+                    "required": [
+                      "payload"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/items/anyOf/0/anyOf/1/properties/clientTargeting/anyOf/0"
+                    }
+                  }
+                ]
+              },
+              "name": {
+                "$ref": "#/items/anyOf/0/anyOf/0/properties/name"
+              }
+            },
+            "required": [
+              "clientTargeting",
+              "name"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      {
+        "type": "object",
+        "properties": {
+          "dateRange": {
+            "$ref": "#/items/anyOf/0/anyOf/0/properties/dateRange"
+          },
+          "targeting": {
+            "$ref": "#/items/anyOf/0/anyOf/0/properties/targeting"
+          },
+          "changes": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "append": {
+                  "type": "array"
+                },
+                "omit": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "merge": {
+                  "type": "object",
+                  "additionalProperties": {}
+                },
+                "without": {
+                  "type": "array"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "modifier": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "changes",
+          "modifier"
+        ],
+        "additionalProperties": false
+      },
+      {
+        "type": "object",
+        "properties": {
+          "dateRange": {
+            "$ref": "#/items/anyOf/0/anyOf/0/properties/dateRange"
+          },
+          "targeting": {
+            "$ref": "#/items/anyOf/0/anyOf/0/properties/targeting"
+          },
+          "modifiers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "modifiers",
+          "name"
+        ],
+        "additionalProperties": false
+      }
+    ]
+  }
+}
