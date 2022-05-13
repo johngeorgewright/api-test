@@ -1,1 +1,5 @@
-foo: bar
+# yaml-language-server: $schema=./something.schema.json
+- name: mung
+  payload:
+    scenarios:
+      - 
